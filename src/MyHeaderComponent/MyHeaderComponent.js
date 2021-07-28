@@ -6,8 +6,8 @@ function MyHeaderComponent({title,list,image}){
             <h1>{title}</h1>
             <ul className="my-header">
                 {
-                    list.map((value)=>{
-                        return <li>{value}</li>
+                    list.map((value, index)=>{
+                        return <li key={index}>{value}</li>
                     })
                 }
             </ul>
