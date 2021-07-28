@@ -1,0 +1,8 @@
+.my-header{
+    display: flex;
+}
+.my-header .image{
+    display: block;
+    width: 100px;
+    height: 50px;
+}
