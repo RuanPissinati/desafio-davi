@@ -1,6 +1,6 @@
 import "./style.css"
 
-function MyHeaderComponent({title,list,image}){
+function MyHeaderComponent({title,list,image, children}){
     return (
         <header className="my-header">
             <h1>{title}</h1>
@@ -12,8 +12,8 @@ function MyHeaderComponent({title,list,image}){
                 }
             </ul>
             <img className="image" src={image} alt="Minha imagem do header"/>
+            {children}
         </header>
     );
-
 }
 export default MyHeaderComponent;
